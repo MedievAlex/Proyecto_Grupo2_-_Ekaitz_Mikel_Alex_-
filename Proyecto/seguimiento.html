@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Seguimiento y Evaluación — DAMI PFG</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ── HEADER ──────────────────────────────── -->
+  <header>
+    <a class="header-logo" href="index.html">DAMI<span>·</span>PFG</a>
+    <nav id="main-nav">
+      <div class="nav-group">
+        <a href="proyecto.html">Sobre el Proyecto</a>
+        <div class="dropdown">
+          <a href="proyecto.html#introduccion">Introducción</a>
+          <a href="proyecto.html#origen">Origen y Contextualización</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a href="objetivos.html">Objetivos</a>
+        <div class="dropdown">
+          <a href="objetivos.html#obj-generales">Objetivos Generales</a>
+          <a href="objetivos.html#obj-especificos">Objetivos Específicos</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a href="recursos.html">Recursos</a>
+        <div class="dropdown">
+          <a href="recursos.html#rec-humanos">Recursos Humanos</a>
+          <a href="recursos.html#rec-materiales">Recursos Materiales</a>
+          <a href="recursos.html#presupuesto">Presupuesto</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a href="seguimiento.html" class="active">Seguimiento y Evaluación</a>
+        <div class="dropdown">
+          <a href="#tareas">Tareas y Cronograma</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a href="anexos.html">Anexos</a>
+        <div class="dropdown">
+          <a href="anexos.html#doc-tecnica">Documentación Técnica</a>
+          <a href="anexos.html#bibliografia">Bibliografía</a>
+        </div>
+      </div>
+    </nav>
+    <div id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <div id="mobile-nav">
+    <a href="proyecto.html">Sobre el Proyecto</a>
+    <a href="proyecto.html#introduccion" class="sub">↳ Introducción</a>
+    <a href="proyecto.html#origen" class="sub">↳ Origen y Contextualización</a>
+    <a href="objetivos.html">Objetivos</a>
+    <a href="objetivos.html#obj-generales" class="sub">↳ Objetivos Generales</a>
+    <a href="objetivos.html#obj-especificos" class="sub">↳ Objetivos Específicos</a>
+    <a href="recursos.html">Recursos</a>
+    <a href="recursos.html#rec-humanos" class="sub">↳ Recursos Humanos</a>
+    <a href="recursos.html#rec-materiales" class="sub">↳ Recursos Materiales</a>
+    <a href="recursos.html#presupuesto" class="sub">↳ Presupuesto</a>
+    <a href="seguimiento.html">Seguimiento y Evaluación</a>
+    <a href="#tareas" class="sub">↳ Tareas y Cronograma</a>
+    <a href="anexos.html">Anexos</a>
+    <a href="anexos.html#doc-tecnica" class="sub">↳ Documentación Técnica</a>
+    <a href="anexos.html#bibliografia" class="sub">↳ Bibliografía</a>
+  </div>
+
+  <!-- ── CONTENIDO ────────────────────────────── -->
+  <main style="margin-top: var(--nav-h);">
+    <section class="page-section bg-light" id="seguimiento">
+      <div class="container">
+        <p class="s-eyebrow">04 — Seguimiento y Evaluación</p>
+        <h2 class="s-title">Seguimiento y Evaluación</h2>
+        <p class="s-subtitle">Planificación de tareas, cronograma de trabajo y criterios de evaluación del proyecto.</p>
+
+        <div class="two-col" id="tareas">
+
+          <!-- TIMELINE -->
+          <div>
+            <h3 class="sub-title" style="margin-top:0">Tareas y Cronograma</h3>
+            <div class="timeline">
+              <div class="tl-item">
+                <div class="tl-dot"></div>
+                <p class="tl-phase">Fase 1 · Semanas 1–2</p>
+                <h4>Análisis y Planificación</h4>
+                <p>Definición de requisitos, análisis funcional y arquitectura. Elección de tecnologías y metodología.</p>
+              </div>
+              <div class="tl-item">
+                <div class="tl-dot"></div>
+                <p class="tl-phase">Fase 2 · Semanas 3–4</p>
+                <h4>Diseño UI/UX</h4>
+                <p>Creación de wireframes y prototipos en Figma. Validación del flujo y experiencia de usuario.</p>
+              </div>
+              <div class="tl-item">
+                <div class="tl-dot"></div>
+                <p class="tl-phase">Fase 3 · Semanas 5–9</p>
+                <h4>Desarrollo</h4>
+                <p>Implementación de funcionalidades principales, integración de APIs y base de datos.</p>
+              </div>
+              <div class="tl-item">
+                <div class="tl-dot"></div>
+                <p class="tl-phase">Fase 4 · Semanas 10–11</p>
+                <h4>Pruebas y Correcciones</h4>
+                <p>Testing unitario e integración, detección de errores y ajustes de rendimiento.</p>
+              </div>
+              <div class="tl-item">
+                <div class="tl-dot dark"></div>
+                <p class="tl-phase">Fase 5 · Semanas 12–13</p>
+                <h4>Documentación y Entrega</h4>
+                <p>Redacción de la memoria final, preparación de diapositivas y defensa del proyecto.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- EVALUACIÓN -->
+          <div>
+            <h3 class="sub-title" style="margin-top:0">Criterios de Evaluación</h3>
+            <table class="tbl">
+              <thead><tr><th>Criterio</th><th>Peso</th></tr></thead>
+              <tbody>
+                <tr><td>Funcionalidad de la App</td><td>30%</td></tr>
+                <tr><td>Diseño e Interfaz de Usuario</td><td>20%</td></tr>
+                <tr><td>Calidad del Código</td><td>20%</td></tr>
+                <tr><td>Documentación</td><td>15%</td></tr>
+                <tr><td>Presentación Oral</td><td>15%</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── FOOTER ──────────────────────────────── -->
+  <footer>
+    <p><strong>Proyecto Final de Grado · DAMI</strong></p>
+    <p>Grado Superior en Desarrollo de Aplicaciones Multiplataforma · 2º Año · 2025–2026</p>
+    <p style="margin-top:.5rem">© 2026 · Todos los derechos reservados</p>
+  </footer>
+
+  <script src="nav.js"></script>
+</body>
+</html>

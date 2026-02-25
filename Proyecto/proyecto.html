@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sobre el Proyecto — DAMI PFG</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ── HEADER ──────────────────────────────── -->
+  <header>
+    <a class="header-logo" href="index.html">DAMI<span>·</span>PFG</a>
+    <nav id="main-nav">
+      <div class="nav-group">
+        <a href="proyecto.html" class="active">Sobre el Proyecto</a>
+        <div class="dropdown">
+          <a href="#introduccion">Introducción</a>
+          <a href="#origen">Origen y Contextualización</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a href="objetivos.html">Objetivos</a>
+        <div class="dropdown">
+          <a href="objetivos.html#obj-generales">Objetivos Generales</a>
+          <a href="objetivos.html#obj-especificos">Objetivos Específicos</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a href="recursos.html">Recursos</a>
+        <div class="dropdown">
+          <a href="recursos.html#rec-humanos">Recursos Humanos</a>
+          <a href="recursos.html#rec-materiales">Recursos Materiales</a>
+          <a href="recursos.html#presupuesto">Presupuesto</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a href="seguimiento.html">Seguimiento y Evaluación</a>
+        <div class="dropdown">
+          <a href="seguimiento.html#tareas">Tareas y Cronograma</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a href="anexos.html">Anexos</a>
+        <div class="dropdown">
+          <a href="anexos.html#doc-tecnica">Documentación Técnica</a>
+          <a href="anexos.html#bibliografia">Bibliografía</a>
+        </div>
+      </div>
+    </nav>
+    <div id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <div id="mobile-nav">
+    <a href="proyecto.html">Sobre el Proyecto</a>
+    <a href="#introduccion" class="sub">↳ Introducción</a>
+    <a href="#origen" class="sub">↳ Origen y Contextualización</a>
+    <a href="objetivos.html">Objetivos</a>
+    <a href="objetivos.html#obj-generales" class="sub">↳ Objetivos Generales</a>
+    <a href="objetivos.html#obj-especificos" class="sub">↳ Objetivos Específicos</a>
+    <a href="recursos.html">Recursos</a>
+    <a href="recursos.html#rec-humanos" class="sub">↳ Recursos Humanos</a>
+    <a href="recursos.html#rec-materiales" class="sub">↳ Recursos Materiales</a>
+    <a href="recursos.html#presupuesto" class="sub">↳ Presupuesto</a>
+    <a href="seguimiento.html">Seguimiento y Evaluación</a>
+    <a href="seguimiento.html#tareas" class="sub">↳ Tareas y Cronograma</a>
+    <a href="anexos.html">Anexos</a>
+    <a href="anexos.html#doc-tecnica" class="sub">↳ Documentación Técnica</a>
+    <a href="anexos.html#bibliografia" class="sub">↳ Bibliografía</a>
+  </div>
+
+  <!-- ── CONTENIDO ────────────────────────────── -->
+  <main style="margin-top: var(--nav-h);">
+    <section class="page-section" id="proyecto">
+      <div class="container">
+        <p class="s-eyebrow">01 — Sobre el Proyecto</p>
+        <h2 class="s-title">Sobre el Proyecto</h2>
+        <p class="s-subtitle">Conoce el origen, motivación y contexto de esta aplicación desarrollada durante el ciclo formativo de DAM.</p>
+
+        <!-- INTRODUCCIÓN -->
+        <div id="introduccion">
+          <h3 class="sub-title">Introducción</h3>
+          <div class="two-col">
+            <div class="prose">
+              <p>Escribe aquí tu introducción: explica de forma breve y clara en qué consiste tu aplicación, a quién va dirigida y cuál es el problema concreto que resuelve.</p>
+              <p>Puedes mencionar el contexto del proyecto dentro del ciclo formativo, la motivación personal y la relevancia de la solución propuesta en el sector elegido.</p>
+            </div>
+            <div class="prose">
+              <p><strong>Nombre de la aplicación:</strong> [Nombre]</p>
+              <p><strong>Plataformas objetivo:</strong> Android / Windows / Web</p>
+              <p><strong>Lenguaje / Framework:</strong> [p.ej. Kotlin, Flutter, .NET MAUI]</p>
+              <p><strong>Base de datos:</strong> [p.ej. MySQL, Firebase, SQLite]</p>
+              <p><strong>Metodología:</strong> [p.ej. Scrum, Kanban]</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ORIGEN Y CONTEXTUALIZACIÓN -->
+        <div id="origen">
+          <h3 class="sub-title">Origen y Contextualización</h3>
+          <div class="prose" style="margin-bottom:2rem">
+            <p>Explica el origen de la idea: ¿cómo surgió? ¿Qué problema o necesidad detectaste? Contextualiza el sector o ámbito donde encaja tu solución.</p>
+            <p>Describe brevemente el estado actual del mercado, soluciones existentes y por qué tu propuesta aporta valor añadido frente a ellas.</p>
+          </div>
+          <div class="card-grid">
+            <div class="card">
+              <div class="card-icon">🔍</div>
+              <h3>Problema Detectado</h3>
+              <p>Describe el problema o necesidad concreta que motivó el desarrollo de la aplicación.</p>
+            </div>
+            <div class="card">
+              <div class="card-icon">💡</div>
+              <h3>Solución Propuesta</h3>
+              <p>Explica cómo tu aplicación resuelve ese problema de forma efectiva y accesible.</p>
+            </div>
+            <div class="card">
+              <div class="card-icon">🎯</div>
+              <h3>Público Objetivo</h3>
+              <p>Define a quién va dirigida: perfil de usuario, sector, rango de edad, contexto de uso.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ── FOOTER ──────────────────────────────── -->
+  <footer>
+    <p><strong>Proyecto Final de Grado · DAMI</strong></p>
+    <p>Grado Superior en Desarrollo de Aplicaciones Multiplataforma · 2º Año · 2025–2026</p>
+    <p style="margin-top:.5rem">© 2026 · Todos los derechos reservados</p>
+  </footer>
+
+  <script src="nav.js"></script>
+</body>
+</html>

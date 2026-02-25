@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Objetivos — DAMI PFG</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ── HEADER ──────────────────────────────── -->
+  <header>
+    <a class="header-logo" href="index.html">DAMI<span>·</span>PFG</a>
+    <nav id="main-nav">
+      <div class="nav-group">
+        <a href="proyecto.html">Sobre el Proyecto</a>
+        <div class="dropdown">
+          <a href="proyecto.html#introduccion">Introducción</a>
+          <a href="proyecto.html#origen">Origen y Contextualización</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a href="objetivos.html" class="active">Objetivos</a>
+        <div class="dropdown">
+          <a href="#obj-generales">Objetivos Generales</a>
+          <a href="#obj-especificos">Objetivos Específicos</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a href="recursos.html">Recursos</a>
+        <div class="dropdown">
+          <a href="recursos.html#rec-humanos">Recursos Humanos</a>
+          <a href="recursos.html#rec-materiales">Recursos Materiales</a>
+          <a href="recursos.html#presupuesto">Presupuesto</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a href="seguimiento.html">Seguimiento y Evaluación</a>
+        <div class="dropdown">
+          <a href="seguimiento.html#tareas">Tareas y Cronograma</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a href="anexos.html">Anexos</a>
+        <div class="dropdown">
+          <a href="anexos.html#doc-tecnica">Documentación Técnica</a>
+          <a href="anexos.html#bibliografia">Bibliografía</a>
+        </div>
+      </div>
+    </nav>
+    <div id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <div id="mobile-nav">
+    <a href="proyecto.html">Sobre el Proyecto</a>
+    <a href="proyecto.html#introduccion" class="sub">↳ Introducción</a>
+    <a href="proyecto.html#origen" class="sub">↳ Origen y Contextualización</a>
+    <a href="objetivos.html">Objetivos</a>
+    <a href="#obj-generales" class="sub">↳ Objetivos Generales</a>
+    <a href="#obj-especificos" class="sub">↳ Objetivos Específicos</a>
+    <a href="recursos.html">Recursos</a>
+    <a href="recursos.html#rec-humanos" class="sub">↳ Recursos Humanos</a>
+    <a href="recursos.html#rec-materiales" class="sub">↳ Recursos Materiales</a>
+    <a href="recursos.html#presupuesto" class="sub">↳ Presupuesto</a>
+    <a href="seguimiento.html">Seguimiento y Evaluación</a>
+    <a href="seguimiento.html#tareas" class="sub">↳ Tareas y Cronograma</a>
+    <a href="anexos.html">Anexos</a>
+    <a href="anexos.html#doc-tecnica" class="sub">↳ Documentación Técnica</a>
+    <a href="anexos.html#bibliografia" class="sub">↳ Bibliografía</a>
+  </div>
+
+  <!-- ── CONTENIDO ────────────────────────────── -->
+  <main style="margin-top: var(--nav-h);">
+    <section class="page-section bg-light" id="objetivos">
+      <div class="container">
+        <p class="s-eyebrow">02 — Objetivos</p>
+        <h2 class="s-title">Objetivos</h2>
+        <p class="s-subtitle">Metas generales y específicas que guían el desarrollo del proyecto de principio a fin.</p>
+
+        <div class="two-col">
+
+          <!-- GENERALES -->
+          <div class="obj-box" id="obj-generales">
+            <h3>🎯 Objetivos Generales</h3>
+            <ul>
+              <li>Desarrollar una aplicación funcional y publicable en múltiples plataformas</li>
+              <li>Aplicar los conocimientos adquiridos durante el ciclo formativo de DAM</li>
+              <li>Cumplir con los plazos y entregables establecidos en la planificación</li>
+              <li>Entregar una documentación técnica completa y profesional</li>
+              <li>Demostrar capacidad para resolver un problema real con tecnología</li>
+            </ul>
+          </div>
+
+          <!-- ESPECÍFICOS -->
+          <div class="obj-box" id="obj-especificos">
+            <h3>🔬 Objetivos Específicos</h3>
+            <ul>
+              <li>Diseñar una interfaz de usuario intuitiva y responsive</li>
+              <li>Implementar un sistema de autenticación seguro</li>
+              <li>Integrar servicios externos mediante APIs REST</li>
+              <li>Aplicar pruebas unitarias y de integración al código</li>
+              <li>Gestionar correctamente la base de datos y la persistencia de datos</li>
+              <li>Desplegar la aplicación en el entorno o tienda correspondiente</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── FOOTER ──────────────────────────────── -->
+  <footer>
+    <p><strong>Proyecto Final de Grado · DAMI</strong></p>
+    <p>Grado Superior en Desarrollo de Aplicaciones Multiplataforma · 2º Año · 2025–2026</p>
+    <p style="margin-top:.5rem">© 2026 · Todos los derechos reservados</p>
+  </footer>
+
+  <script src="nav.js"></script>
+</body>
+</html>

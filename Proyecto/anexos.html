@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anexos — DAMI PFG</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ── HEADER ──────────────────────────────── -->
+  <header>
+    <a class="header-logo" href="index.html">DAMI<span>·</span>PFG</a>
+    <nav id="main-nav">
+      <div class="nav-group">
+        <a href="proyecto.html">Sobre el Proyecto</a>
+        <div class="dropdown">
+          <a href="proyecto.html#introduccion">Introducción</a>
+          <a href="proyecto.html#origen">Origen y Contextualización</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a href="objetivos.html">Objetivos</a>
+        <div class="dropdown">
+          <a href="objetivos.html#obj-generales">Objetivos Generales</a>
+          <a href="objetivos.html#obj-especificos">Objetivos Específicos</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a href="recursos.html">Recursos</a>
+        <div class="dropdown">
+          <a href="recursos.html#rec-humanos">Recursos Humanos</a>
+          <a href="recursos.html#rec-materiales">Recursos Materiales</a>
+          <a href="recursos.html#presupuesto">Presupuesto</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a href="seguimiento.html">Seguimiento y Evaluación</a>
+        <div class="dropdown">
+          <a href="seguimiento.html#tareas">Tareas y Cronograma</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a href="anexos.html" class="active">Anexos</a>
+        <div class="dropdown">
+          <a href="#doc-tecnica">Documentación Técnica</a>
+          <a href="#bibliografia">Bibliografía</a>
+        </div>
+      </div>
+    </nav>
+    <div id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <div id="mobile-nav">
+    <a href="proyecto.html">Sobre el Proyecto</a>
+    <a href="proyecto.html#introduccion" class="sub">↳ Introducción</a>
+    <a href="proyecto.html#origen" class="sub">↳ Origen y Contextualización</a>
+    <a href="objetivos.html">Objetivos</a>
+    <a href="objetivos.html#obj-generales" class="sub">↳ Objetivos Generales</a>
+    <a href="objetivos.html#obj-especificos" class="sub">↳ Objetivos Específicos</a>
+    <a href="recursos.html">Recursos</a>
+    <a href="recursos.html#rec-humanos" class="sub">↳ Recursos Humanos</a>
+    <a href="recursos.html#rec-materiales" class="sub">↳ Recursos Materiales</a>
+    <a href="recursos.html#presupuesto" class="sub">↳ Presupuesto</a>
+    <a href="seguimiento.html">Seguimiento y Evaluación</a>
+    <a href="seguimiento.html#tareas" class="sub">↳ Tareas y Cronograma</a>
+    <a href="anexos.html">Anexos</a>
+    <a href="#doc-tecnica" class="sub">↳ Documentación Técnica</a>
+    <a href="#bibliografia" class="sub">↳ Bibliografía</a>
+  </div>
+
+  <!-- ── CONTENIDO ────────────────────────────── -->
+  <main style="margin-top: var(--nav-h);">
+    <section class="page-section" id="anexos">
+      <div class="container">
+        <p class="s-eyebrow">05 — Anexos</p>
+        <h2 class="s-title">Anexos</h2>
+        <p class="s-subtitle">Documentación técnica complementaria y referencias bibliográficas del proyecto.</p>
+
+        <!-- DOCUMENTACIÓN TÉCNICA -->
+        <div id="doc-tecnica">
+          <h3 class="sub-title">Documentación Técnica</h3>
+
+          <a class="anexo-row" href="#">
+            <span class="a-icon">📄</span>
+            <div class="a-text">
+              <strong>Memoria del Proyecto</strong>
+              <span>Documento completo en PDF con toda la información del proyecto · v1.0</span>
+            </div>
+            <span class="a-arrow">→</span>
+          </a>
+
+          <a class="anexo-row" href="#">
+            <span class="a-icon">🎨</span>
+            <div class="a-text">
+              <strong>Prototipo Figma</strong>
+              <span>Diseño UI/UX · Wireframes, mockups y flujo de usuario completo</span>
+            </div>
+            <span class="a-arrow">→</span>
+          </a>
+
+          <a class="anexo-row" href="#">
+            <span class="a-icon">🐙</span>
+            <div class="a-text">
+              <strong>Repositorio GitHub</strong>
+              <span>Código fuente completo del proyecto con historial de commits</span>
+            </div>
+            <span class="a-arrow">→</span>
+          </a>
+
+          <a class="anexo-row" href="#">
+            <span class="a-icon">🗄️</span>
+            <div class="a-text">
+              <strong>Diagrama Entidad-Relación</strong>
+              <span>Modelo de base de datos · Schema SQL y relaciones entre tablas</span>
+            </div>
+            <span class="a-arrow">→</span>
+          </a>
+
+          <a class="anexo-row" href="#">
+            <span class="a-icon">📊</span>
+            <div class="a-text">
+              <strong>Presentación de Diapositivas</strong>
+              <span>Slides para la defensa oral del Proyecto Final de Grado</span>
+            </div>
+            <span class="a-arrow">→</span>
+          </a>
+        </div>
+
+        <!-- BIBLIOGRAFÍA -->
+        <div id="bibliografia">
+          <h3 class="sub-title">Bibliografía</h3>
+          <div class="prose">
+            <ul>
+              <li>Documentación oficial del framework utilizado — [enlace]</li>
+              <li>Android Developers Documentation — developer.android.com</li>
+              <li>[Nombre del libro de referencia] — Autor, Año, Editorial</li>
+              <li>Stack Overflow — stackoverflow.com</li>
+              <li>Apuntes y materiales del ciclo formativo DAM</li>
+              <li>[Otros recursos, tutoriales o artículos consultados]</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ── FOOTER ──────────────────────────────── -->
+  <footer>
+    <p><strong>Proyecto Final de Grado · DAMI</strong></p>
+    <p>Grado Superior en Desarrollo de Aplicaciones Multiplataforma · 2º Año · 2025–2026</p>
+    <p style="margin-top:.5rem">© 2026 · Todos los derechos reservados</p>
+  </footer>
+
+  <script src="nav.js"></script>
+</body>
+</html>
