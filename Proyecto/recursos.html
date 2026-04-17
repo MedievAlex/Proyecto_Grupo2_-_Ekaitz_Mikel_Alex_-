@@ -1,161 +1,759 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Recursos — DAMI PFG</title>
-  <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recursos — DAMI PFG</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ── HEADER ──────────────────────────────── -->
+    <header>
+      <a class="header-logo" href="index.html">DAMI<span>·</span>PFG</a>
+      <nav id="main-nav">
+        <div class="nav-group">
+          <a href="proyecto.html">Sobre el Proyecto</a>
+          <div class="dropdown">
+            <a href="proyecto.html#introduccion">Introducción</a>
+            <a href="proyecto.html#origen">Origen y Contextualización</a>
+          </div>
+        </div>
+        <div class="nav-group">
+          <a href="objetivos.html">Objetivos</a>
+          <div class="dropdown">
+            <a href="objetivos.html#obj-generales">Objetivos Generales</a>
+            <a href="objetivos.html#obj-especificos">Objetivos Específicos</a>
+          </div>
+        </div>
+        <div class="nav-group">
+          <a href="recursos.html" class="active">Recursos</a>
+          <div class="dropdown">
+            <a href="#rec-humanos">Recursos Humanos</a>
+            <a href="#rec-materiales">Recursos Materiales</a>
+            <a href="#presupuesto">Presupuesto</a>
+          </div>
+        </div>
+        <div class="nav-group">
+          <a href="seguimiento.html">Seguimiento y Evaluación</a>
+          <div class="dropdown">
+            <a href="seguimiento.html#tareas">Tareas y Cronograma</a>
+          </div>
+        </div>
+        <div class="nav-group">
+          <a href="anexos.html">Anexos</a>
+          <div class="dropdown">
+            <a href="anexos.html#doc-tecnica">Documentación Técnica</a>
+            <a href="anexos.html#bibliografia">Bibliografía</a>
+          </div>
+        </div>
+      </nav>
+      <div id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </header>
 
-  <!-- ── HEADER ──────────────────────────────── -->
-  <header>
-    <a class="header-logo" href="index.html">DAMI<span>·</span>PFG</a>
-    <nav id="main-nav">
-      <div class="nav-group">
-        <a href="proyecto.html">Sobre el Proyecto</a>
-        <div class="dropdown">
-          <a href="proyecto.html#introduccion">Introducción</a>
-          <a href="proyecto.html#origen">Origen y Contextualización</a>
-        </div>
-      </div>
-      <div class="nav-group">
-        <a href="objetivos.html">Objetivos</a>
-        <div class="dropdown">
-          <a href="objetivos.html#obj-generales">Objetivos Generales</a>
-          <a href="objetivos.html#obj-especificos">Objetivos Específicos</a>
-        </div>
-      </div>
-      <div class="nav-group">
-        <a href="recursos.html" class="active">Recursos</a>
-        <div class="dropdown">
-          <a href="#rec-humanos">Recursos Humanos</a>
-          <a href="#rec-materiales">Recursos Materiales</a>
-          <a href="#presupuesto">Presupuesto</a>
-        </div>
-      </div>
-      <div class="nav-group">
-        <a href="seguimiento.html">Seguimiento y Evaluación</a>
-        <div class="dropdown">
-          <a href="seguimiento.html#tareas">Tareas y Cronograma</a>
-        </div>
-      </div>
-      <div class="nav-group">
-        <a href="anexos.html">Anexos</a>
-        <div class="dropdown">
-          <a href="anexos.html#doc-tecnica">Documentación Técnica</a>
-          <a href="anexos.html#bibliografia">Bibliografía</a>
-        </div>
-      </div>
-    </nav>
-    <div id="hamburger" onclick="toggleMenu()">
-      <span></span><span></span><span></span>
+    <div id="mobile-nav">
+      <a href="proyecto.html">Sobre el Proyecto</a>
+      <a href="proyecto.html#introduccion" class="sub">↳ Introducción</a>
+      <a href="proyecto.html#origen" class="sub"
+        >↳ Origen y Contextualización</a
+      >
+      <a href="objetivos.html">Objetivos</a>
+      <a href="objetivos.html#obj-generales" class="sub"
+        >↳ Objetivos Generales</a
+      >
+      <a href="objetivos.html#obj-especificos" class="sub"
+        >↳ Objetivos Específicos</a
+      >
+      <a href="recursos.html">Recursos</a>
+      <a href="#rec-humanos" class="sub">↳ Recursos Humanos</a>
+      <a href="#rec-materiales" class="sub">↳ Recursos Materiales</a>
+      <a href="#presupuesto" class="sub">↳ Presupuesto</a>
+      <a href="seguimiento.html">Seguimiento y Evaluación</a>
+      <a href="seguimiento.html#tareas" class="sub">↳ Tareas y Cronograma</a>
+      <a href="anexos.html">Anexos</a>
+      <a href="anexos.html#doc-tecnica" class="sub">↳ Documentación Técnica</a>
+      <a href="anexos.html#bibliografia" class="sub">↳ Bibliografía</a>
     </div>
-  </header>
 
-  <div id="mobile-nav">
-    <a href="proyecto.html">Sobre el Proyecto</a>
-    <a href="proyecto.html#introduccion" class="sub">↳ Introducción</a>
-    <a href="proyecto.html#origen" class="sub">↳ Origen y Contextualización</a>
-    <a href="objetivos.html">Objetivos</a>
-    <a href="objetivos.html#obj-generales" class="sub">↳ Objetivos Generales</a>
-    <a href="objetivos.html#obj-especificos" class="sub">↳ Objetivos Específicos</a>
-    <a href="recursos.html">Recursos</a>
-    <a href="#rec-humanos" class="sub">↳ Recursos Humanos</a>
-    <a href="#rec-materiales" class="sub">↳ Recursos Materiales</a>
-    <a href="#presupuesto" class="sub">↳ Presupuesto</a>
-    <a href="seguimiento.html">Seguimiento y Evaluación</a>
-    <a href="seguimiento.html#tareas" class="sub">↳ Tareas y Cronograma</a>
-    <a href="anexos.html">Anexos</a>
-    <a href="anexos.html#doc-tecnica" class="sub">↳ Documentación Técnica</a>
-    <a href="anexos.html#bibliografia" class="sub">↳ Bibliografía</a>
-  </div>
+    <!-- ── CONTENIDO ────────────────────────────── -->
+    <main style="margin-top: var(--nav-h)">
+      <section class="page-section" id="recursos">
+        <div class="container">
+          <p class="s-eyebrow">03 — Recursos</p>
+          <h2 class="s-title">Recursos</h2>
+          <p class="s-subtitle">
+            Medios humanos, materiales y económicos empleados para llevar a cabo
+            el proyecto.
+          </p>
 
-  <!-- ── CONTENIDO ────────────────────────────── -->
-  <main style="margin-top: var(--nav-h);">
-    <section class="page-section" id="recursos">
-      <div class="container">
-        <p class="s-eyebrow">03 — Recursos</p>
-        <h2 class="s-title">Recursos</h2>
-        <p class="s-subtitle">Medios humanos, materiales y económicos empleados para llevar a cabo el proyecto.</p>
-
-        <!-- HUMANOS -->
-        <div id="rec-humanos">
-          <h3 class="sub-title">Recursos Humanos</h3>
-          <div class="two-col">
-            <div class="recurso-card">
-              <span class="r-icon">👨‍💻</span>
-              <div>
-                <h4>Desarrollador / Alumno</h4>
-                <p>Responsable del análisis, diseño, desarrollo, pruebas y documentación completa del proyecto de principio a fin.</p>
+          <!-- HUMANOS -->
+          <div id="rec-humanos">
+            <h3 class="sub-title">Recursos Humanos</h3>
+            <div class="two-col">
+              <div class="recurso-card">
+                <span class="r-icon">👨‍💻</span>
+                <div>
+                  <h4>Desarrollador Junior (Mikel)</h4>
+                  <p>Encargado del material y relación con otros equipos.</p>
+                </div>
               </div>
-            </div>
-            <div class="recurso-card">
-              <span class="r-icon">👨‍🏫</span>
-              <div>
-                <h4>Tutor / Profesor</h4>
-                <p>Supervisión, orientación y seguimiento del progreso durante todo el ciclo de vida del proyecto.</p>
+              <div class="recurso-card">
+                <span class="r-icon">👨‍💻</span>
+                <div>
+                  <h4>Desarrollador Senior (Ekaitz)</h4>
+                  <p>Encargado del control de las tareas y el tiempo.</p>
+                </div>
+              </div>
+              <div class="recurso-card">
+                <span class="r-icon">👨‍💻</span>
+                <div>
+                  <h4>Desarrollador Senior (Alex)</h4>
+                  <p>Coordinador de equipo y registro de las decisiones.</p>
+                </div>
+              </div>
+              <div class="recurso-card">
+                <span class="r-icon">👨‍🏫</span>
+                <div>
+                  <h4>Profesor</h4>
+                  <p>
+                    Supervisión, orientación y seguimiento del progreso durante
+                    todo el ciclo de vida del proyecto.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- MATERIALES -->
-        <div id="rec-materiales">
-          <h3 class="sub-title">Recursos Materiales</h3>
-          <div class="card-grid">
-            <div class="card">
-              <div class="card-icon">💻</div>
-              <h3>Hardware</h3>
-              <p>Ordenador de desarrollo, dispositivos móviles para pruebas reales y conexión a internet.</p>
-            </div>
-            <div class="card">
-              <div class="card-icon">🛠️</div>
-              <h3>Software</h3>
-              <p>Android Studio / VS Code, Git &amp; GitHub, Postman, Figma, emuladores Android.</p>
-            </div>
-            <div class="card">
-              <div class="card-icon">☁️</div>
-              <h3>Servicios Cloud</h3>
-              <p>Firebase / AWS / servidor propio para el despliegue y alojamiento de la aplicación.</p>
-            </div>
-            <div class="card">
-              <div class="card-icon">📦</div>
-              <h3>Gestión</h3>
-              <p>Trello o Notion para la planificación de tareas y seguimiento del proyecto.</p>
+          <!-- MATERIALES -->
+          <div id="rec-materiales">
+            <h3 class="sub-title">Recursos Materiales</h3>
+            <div class="card-grid">
+              <div class="card">
+                <div class="card-icon">💻</div>
+                <h3>Entornos de desarrollo</h3>
+                <ul>
+                  <li>
+                    <b>Netbeans IDE.</b> Para desarrollar la aplicación de
+                    escritorio.
+                  </li>
+                  <li>
+                    <b>MySQL Workbench.</b> Para la creación y almacenamiento de
+                    las bases de datos.
+                  </li>
+                  <li><b>Pycharm.</b></li>
+                  <li><b>PgAdmin.</b></li>
+                </ul>
+              </div>
+              <div class="card">
+                <div class="card-icon">🛠️</div>
+                <h3>Edición de código</h3>
+                <ul>
+                  <li><b>VisualStudio Code.</b> Para editar código.</li>
+                </ul>
+              </div>
+              <div class="card">
+                <div class="card-icon">📦</div>
+                <h3>Gestión de versiones</h3>
+                <ul>
+                  <li><b>Git.</b> Para gestionar las versiones localmente.</li>
+                  <li>
+                    <b>GitHub.</b> Para subir y compartir las versiones y
+                    trabajar en grupo.
+                  </li>
+                  <li>
+                    <b>SourceTree.</b> Para facilitar la gestión de versiones.
+                  </li>
+                  <li>
+                    <b>TortoiseGit.</b> Para facilitar la gestión de versiones.
+                  </li>
+                  <li>
+                    <b>LazyGit.</b> Para facilitar la gestión de versiones.
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
+          <!-- PRESUPUESTO -->
+          <div id="presupuesto">
+            <h3 class="sub-title">Presupuesto</h3>
+            <table class="tbl">
+              <thead>
+                <tr>
+                  <th>Código</th>
+                  <th>Tarea/Actividad</th>
+                  <th>Recurso</th>
+                  <th>Tasa €/día</th>
+                  <th>Unidades día</th>
+                  <th>Precio por tarea €</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Tarea 1 -->
+                <tr>
+                  <td>1</td>
+                  <td><strong>Plantear el proyecto</strong></td>
+                  <td></td>
+                  <td></td>
+                  <td>2</td>
+                  <td>400 €</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Sr. Ekaitz</td>
+                  <td>80 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Sr. Alex</td>
+                  <td>80 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Jr. Mikel</td>
+                  <td>40 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <!-- Tarea 2 -->
+                <tr>
+                  <td>2</td>
+                  <td>
+                    <strong>Identificar y conectar con el proyecto</strong>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td>2</td>
+                  <td>400 €</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Sr. Ekaitz</td>
+                  <td>80 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Sr. Alex</td>
+                  <td>80 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Jr. Mikel</td>
+                  <td>40 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <!-- Tarea 3 -->
+                <tr>
+                  <td>3</td>
+                  <td><strong>Establecer parámetros</strong></td>
+                  <td></td>
+                  <td></td>
+                  <td>1</td>
+                  <td>200 €</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Sr. Ekaitz</td>
+                  <td>80 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Sr. Alex</td>
+                  <td>80 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Jr. Mikel</td>
+                  <td>40 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <!-- Tarea 4 -->
+                <tr>
+                  <td>4</td>
+                  <td><strong>Obtener y organizar información</strong></td>
+                  <td></td>
+                  <td></td>
+                  <td>2</td>
+                  <td>400 €</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Sr. Ekaitz</td>
+                  <td>80 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Sr. Alex</td>
+                  <td>80 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Jr. Mikel</td>
+                  <td>40 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <!-- Tarea 5 -->
+                <tr>
+                  <td>5</td>
+                  <td><strong>Generar alternativas</strong></td>
+                  <td></td>
+                  <td></td>
+                  <td>1</td>
+                  <td>200 €</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Sr. Ekaitz</td>
+                  <td>80 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Sr. Alex</td>
+                  <td>80 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Jr. Mikel</td>
+                  <td>40 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <!-- Tarea 6 -->
+                <tr>
+                  <td>6</td>
+                  <td><strong>Presentar las propuestas</strong></td>
+                  <td></td>
+                  <td></td>
+                  <td>2</td>
+                  <td>400 €</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Jr. Ekaitz</td>
+                  <td>80 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Jr. Alex</td>
+                  <td>80 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Jr. Mikel</td>
+                  <td>40 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <!-- Tarea 7 -->
+                <tr>
+                  <td>7</td>
+                  <td><strong>Seleccionar la propuesta</strong></td>
+                  <td></td>
+                  <td></td>
+                  <td>3</td>
+                  <td>600 €</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Sr. Ekaitz</td>
+                  <td>80 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Sr. Alex</td>
+                  <td>80 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Jr. Mikel</td>
+                  <td>40 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <!-- Tarea 8 -->
+                <tr>
+                  <td>8</td>
+                  <td><strong>Obtener y organizar información</strong></td>
+                  <td></td>
+                  <td></td>
+                  <td>2</td>
+                  <td>400 €</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Sr. Ekaitz</td>
+                  <td>80 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Sr. Alex</td>
+                  <td>80 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Jr. Mikel</td>
+                  <td>40 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <!-- Tarea 9 -->
+                <tr>
+                  <td>9</td>
+                  <td><strong>Planificar acciones</strong></td>
+                  <td></td>
+                  <td></td>
+                  <td>2</td>
+                  <td>400 €</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Sr. Ekaitz</td>
+                  <td>80 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Sr. Alex</td>
+                  <td>80 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Jr. Mikel</td>
+                  <td>40 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <!-- Tarea 10 -->
+                <tr>
+                  <td>10</td>
+                  <td><strong>Diseño de los casos de uso</strong></td>
+                  <td></td>
+                  <td></td>
+                  <td>1</td>
+                  <td>80 €</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Sr. Alex</td>
+                  <td>80 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <!-- Tarea 11 -->
+                <tr>
+                  <td>11</td>
+                  <td>
+                    <strong>Diseño del diagrama de entidad-realación</strong>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td>1</td>
+                  <td>80 €</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Sr. Alex</td>
+                  <td>80 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <!-- Tarea 12 -->
+                <tr>
+                  <td>12</td>
+                  <td><strong>Diseño del diagrama de clases</strong></td>
+                  <td></td>
+                  <td></td>
+                  <td>1</td>
+                  <td>80 €</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Sr. Alex</td>
+                  <td>80 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <!-- Tarea 13 -->
+                <tr>
+                  <td>13</td>
+                  <td><strong>Diseño gráfico de las ventanas</strong></td>
+                  <td></td>
+                  <td></td>
+                  <td>4</td>
+                  <td>320 €</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Sr. Alex</td>
+                  <td>80 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <!-- Tarea 14 -->
+                <tr>
+                  <td>14</td>
+                  <td><strong>Codificación de las ventanas</strong></td>
+                  <td></td>
+                  <td></td>
+                  <td>13</td>
+                  <td>2.600 €</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Sr. Ekaitz</td>
+                  <td>80 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Sr. Alex</td>
+                  <td>80 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Jr. Mikel</td>
+                  <td>40 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <!-- Tarea 15 -->
+                <tr>
+                  <td>15</td>
+                  <td><strong>Creación del backend</strong></td>
+                  <td></td>
+                  <td></td>
+                  <td>11</td>
+                  <td>880 €</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Sr. Ekaitz</td>
+                  <td>80 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <!-- Tarea 16 -->
+                <tr>
+                  <td>16</td>
+                  <td>
+                    <strong
+                      >Manejo de errores y excepciones del servidor</strong
+                    >
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td>3</td>
+                  <td>240 €</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Jr. Ekaitz</td>
+                  <td>80 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <!-- Tarea 17 -->
+                <tr>
+                  <td>17</td>
+                  <td>
+                    <strong>Manejo de errores y excepciones del cliente</strong>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td>3</td>
+                  <td>120 €</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Jr. Mikel</td>
+                  <td>40 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <!-- Tarea 18 -->
+                <tr>
+                  <td>18</td>
+                  <td><strong>Codificación de los tests</strong></td>
+                  <td></td>
+                  <td></td>
+                  <td>2</td>
+                  <td>400 €</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Sr. Ekaitz</td>
+                  <td>80 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Sr. Alex</td>
+                  <td>80 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Jr. Mikel</td>
+                  <td>40 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <!-- Tarea 19 -->
+                <tr>
+                  <td>19</td>
+                  <td><strong>Testeo de la aplicación</strong></td>
+                  <td></td>
+                  <td></td>
+                  <td>2</td>
+                  <td>400 €</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Sr. Ekaitz</td>
+                  <td>80 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Sr. Alex</td>
+                  <td>80 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Jr. Mikel</td>
+                  <td>40 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <!-- Tarea 20 -->
+                <tr>
+                  <td>20</td>
+                  <td><strong>Empaquetado y entrega del proyecto</strong></td>
+                  <td></td>
+                  <td></td>
+                  <td>2</td>
+                  <td>160 €</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Programador Sr. Ekaitz</td>
+                  <td>80 €</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <!-- Total -->
+                <tr>
+                  <td colspan="4"><strong>Total</strong></td>
+                  <td><strong>60</strong></td>
+                  <td><strong>8.760 €</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
+      </section>
+    </main>
 
-        <!-- PRESUPUESTO -->
-        <div id="presupuesto">
-          <h3 class="sub-title">Presupuesto</h3>
-          <table class="tbl">
-            <thead>
-              <tr><th>Concepto</th><th>Descripción</th><th>Coste estimado</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>Hardware</td><td>Equipo de desarrollo ya disponible</td><td>0 €</td></tr>
-              <tr><td>Licencias Software</td><td>Herramientas gratuitas / licencias de estudiante</td><td>0 €</td></tr>
-              <tr><td>Servidor / Hosting</td><td>Plan gratuito Firebase / VPS básico</td><td>0 – 5 €/mes</td></tr>
-              <tr><td>Google Play</td><td>Licencia de publicación (pago único)</td><td>25 €</td></tr>
-              <tr><td>Recursos gráficos</td><td>Iconos y assets gratuitos (Flaticon, Unsplash)</td><td>0 €</td></tr>
-              <tr><td colspan="2"><strong>TOTAL ESTIMADO</strong></td><td><strong>~25 – 85 €</strong></td></tr>
-            </tbody>
-          </table>
-        </div>
+    <!-- ── FOOTER ──────────────────────────────── -->
+    <footer>
+      <p><strong>Proyecto Final de Grado · DAMI</strong></p>
+      <p>
+        Grado Superior en Desarrollo de Aplicaciones Multiplataforma · 2º Año ·
+        2025–2026
+      </p>
+      <p style="margin-top: 0.5rem">© 2026 · Todos los derechos reservados</p>
+    </footer>
 
-      </div>
-    </section>
-  </main>
-
-  <!-- ── FOOTER ──────────────────────────────── -->
-  <footer>
-    <p><strong>Proyecto Final de Grado · DAMI</strong></p>
-    <p>Grado Superior en Desarrollo de Aplicaciones Multiplataforma · 2º Año · 2025–2026</p>
-    <p style="margin-top:.5rem">© 2026 · Todos los derechos reservados</p>
-  </footer>
-
-  <script src="nav.js"></script>
-</body>
+    <script src="nav.js"></script>
+  </body>
 </html>
