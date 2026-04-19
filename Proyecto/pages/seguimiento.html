@@ -281,7 +281,6 @@
 <script>
 (function () {
   const TOTAL_DAYS = 60;
-  const TODAY      = 49;
 
   function buildGantt() {
     /* Get width of one day-th cell from the header */
@@ -332,11 +331,6 @@
       rb.style.cssText = `left:${pxOf(rs-1)};width:${wPx(rd)};`;
       cell.appendChild(rb);
 
-      /* Today line */
-      const tl = document.createElement("div");
-      tl.className = "gantt-today-line";
-      tl.style.left = pxOf(TODAY - 1);
-      cell.appendChild(tl);
     });
 
     /* ── Hover: highlight full column (header + all rows) ── */
